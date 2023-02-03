@@ -36,19 +36,16 @@
     </header>
 <br>
 <p>RTS 1</p>
-<video id="video" width="1024" height="768" controls >
-<script>
-if (Hls.isSupported()) {
-var video = document.getElementById("video");
-var hls = new Hls();
-hls.loadSource ("https://raw.githubusercontent.com/blueice456/stream/main/rts1.m3u8");
-hls.attachMedia (video);
-hls.on (Hls. Events. MANIFEST_PARSED, function(){
-video.play();
-});
-}
-</script>
+<link href="https://unpkg.com/video.js@7/dist/video-js.css" rel="stylesheet">
+<video id="my-video" class="video-js" controls preload="auto" width="1125" height="632"
+  poster="" data-setup='{"fluid": true}'>
+  <source src="https://raw.githubusercontent.com/blueice456/stream/main/rts1.m3u8" type="application/x-mpegURL">
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
 </video>
+<script src="https://unpkg.com/video.js@7/dist/video.js"></script>
 <footer>
     <div class="copyright">
     <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Free TV. Sva prava zadrzana.</p>
