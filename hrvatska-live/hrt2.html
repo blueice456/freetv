@@ -1,0 +1,59 @@
+<html>
+<head>
+<link rel="stylesheet" href="../css/izgled.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width,height=device-height"> 
+<script src="http://hlsbook.net/wp-content/examples/hls.min.js"></script>
+<title>HRT 2 TV | HD</title>
+</head>
+<body>
+    <style>
+        img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{ display:none!important;}
+    </style>
+<header>
+      <div id="brand"><a href="../index.html">Besplatna Televizija</a></div>
+      <nav>
+        <ul>
+          <li><a href="../srbija.html">Srbija</a></li>
+          <li><a href="../bih.html">BiH</a></li>
+          <li><a href="../hrvatska.html">Hrvatska</a></li>
+          <li><a href="../slovenija.html">Slovenija</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+        <ul class="mobile-menu">
+	      <li><a href="../srbija.html">Srbija</a></li>
+          <li><a href="../bih.html">BiH</a></li>
+          <li><a href="../hrvatska.html">Hrvatska</a></li>
+          <li><a href="../slovenija.html">Slovenija</a></li>
+        </ul>
+      </div>
+    </header>
+<br>
+<p>HRT 2 TV | HD</p>
+<video id="video" width="1024" height="768" controls >
+<script>
+if (Hls.isSupported()) {
+var video = document.getElementById("video");
+var hls = new Hls();
+hls.loadSource ("http://webtvstream.bhtelecom.ba/hrt2.m3u8");
+hls.attachMedia (video);
+hls.on (Hls. Events. MANIFEST_PARSED, function(){
+video.play();
+});
+}
+</script>
+</video>
+<footer>
+    <div class="copyright">
+    <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Free TV. Sva prava zadrzana.</p>
+    </div>
+</footer>
+<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
