@@ -707,7 +707,7 @@ body {
 }
 
 .copyright p {
-  text-align: center;
+  text-align: center!important;
   justify-content: center!important;
   color: #fff;
   font-size: 16px;
