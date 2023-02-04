@@ -523,12 +523,6 @@ ul li:hover {
   font-size: 20px;
 }
 
-
-.copyright {
-  display: block;
-  text-align: center;
-}
-
 /* Kvadrati na Home stranici */
 
 figure,
@@ -704,6 +698,9 @@ body {
   .global-title:after {
       width: 80%;
   }
+  .copyright p {
+    font-size: 13px;
+    margin: 20px;
 }
 
 .copyright p {
